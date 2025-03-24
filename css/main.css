@@ -8,13 +8,41 @@ body{
 }
 .wrapper{
   margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 64px 24px;
   max-width: 1280px;
+}
+.cards__container{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cards__container__title{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card{
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img__card{
+  display: block;
+  width: 100%;
+  height: 175px;
+}
+.content__card{
+  padding: 24px 18px;
+}
+.card__title{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.card__paragraph{
+  font-size: 14px;
 }
 @media(min-width:48rem){/*768px*/
   .wrapper{
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 80px 32px;
   }
 }

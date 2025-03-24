@@ -5,8 +5,7 @@ header{
   display: flex;
   flex-direction: column;
   /* gap: 24px; */
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 64px 24px;
 }
 .header__imagem__container .header__imagem{
   display: block;
