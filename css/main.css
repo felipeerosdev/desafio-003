@@ -19,7 +19,7 @@ body{
 .cards__container__title{
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
 }
 .card{
   border: 2px solid var(--purple);
@@ -44,5 +44,14 @@ body{
 @media(min-width:48rem){/*768px*/
   .wrapper{
     padding: 80px 32px;
+  }
+  .cards__container{
+    display: grid;
+    grid-template-columns: 335px 335px;
+    grid-template-rows: repeat(3,327px);
+    gap: 48px 32px;
+  }
+  .cards__container__title{
+    font-size: 28px;
   }
 }
