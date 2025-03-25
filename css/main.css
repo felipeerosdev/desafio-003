@@ -11,12 +11,12 @@ body{
   padding: 64px 24px;
   max-width: 1280px;
 }
-.cards__container{
+.cards__wrapper{
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.cards__container__title{
+.cards__section__title{
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -45,13 +45,33 @@ body{
   .wrapper{
     padding: 80px 32px;
   }
-  .cards__container{
+  .cards__wrapper{
     display: grid;
     grid-template-columns: 335px 335px;
     grid-template-rows: repeat(3,327px);
     gap: 48px 32px;
   }
-  .cards__container__title{
+  .cards__section__title{
     font-size: 28px;
+  }
+  .card__title{
+    width: 336px;
+  }
+}
+@media(min-width:64rem){/*1024px*/
+  .cards__wrapper{
+    grid-template-columns: repeat(3,384px);
+    grid-template-rows: repeat(2,357px);
+    gap: 48px 32px;
+  }
+  .cards__section__title{
+    font-size: 32px;
+    margin-bottom: 112px;
+  }
+  .card__title{
+    font-size: 20px;
+  }
+  .card__paragraph{
+    font-size: 18px;
   }
 }
