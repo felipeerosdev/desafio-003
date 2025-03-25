@@ -29,3 +29,18 @@ footer{
   resize: none;
   font-size: 14px;
 }
+@media(min-width:48rem){/*768px*/
+  .input__item{
+    padding: 20px 24px;
+    font-size: 18px;
+  }
+  .textArea__item{
+    font-size: 18px;
+  }
+  .btn{
+    width: 100%;
+  }
+}
+@media(min-width:64rem){/*1024px*/
+  
+}
