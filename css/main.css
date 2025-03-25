@@ -2,11 +2,76 @@ body{
   font-family: "Roboto",sans-serif;
 }
 .container{
-  max-width: 1920px;
+  /* max-width: 1920px; */
   width: 100%;
   margin: 0 auto;
 }
 .wrapper{
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 64px 24px;
+  max-width: 1280px;
+}
+.cards__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cards__section__title{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.card{
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img__card{
+  display: block;
+  width: 100%;
+  height: 175px;
+}
+.content__card{
+  padding: 24px 18px;
+}
+.card__title{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.card__paragraph{
+  font-size: 14px;
+}
+@media(min-width:48rem){/*768px*/
+  .wrapper{
+    padding: 80px 32px;
+  }
+  .cards__wrapper{
+    display: grid;
+    grid-template-columns: 335px 335px;
+    grid-template-rows: repeat(3,327px);
+    gap: 48px 32px;
+  }
+  .cards__section__title{
+    font-size: 28px;
+  }
+  .card__title{
+    width: 336px;
+  }
+}
+@media(min-width:64rem){/*1024px*/
+  .cards__wrapper{
+    grid-template-columns: repeat(3,384px);
+    grid-template-rows: repeat(2,357px);
+    gap: 48px 32px;
+  }
+  .cards__section__title{
+    font-size: 32px;
+    margin-bottom: 112px;
+  }
+  .card__title{
+    font-size: 20px;
+  }
+  .card__paragraph{
+    font-size: 18px;
+  }
 }
