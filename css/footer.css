@@ -42,5 +42,14 @@ footer{
   }
 }
 @media(min-width:64rem){/*1024px*/
-  
+  footer{
+    padding: 14px 0;
+  }
+  .footer__container{
+    width: 592px;
+  }
+  .footer__title{
+    font-size: 32px;
+    text-align: center;
+  }
 }
